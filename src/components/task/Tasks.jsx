@@ -8,9 +8,10 @@ export const Tasks = ({ taskList, setTaskList }) => {
     if (!e.destination) {
       return;
     }
-    const remove = taskList.splice(e.source.index, 1);
-    taskList.splice(e.destination.index, 0, remove[0]);
-    setTaskList(taskList);
+    const newTaskList = [...taskList];
+    const remove = newTaskList.splice(e.source.index, 1);
+    newTaskList.splice(e.destination.index, 0, remove[0]);
+    setTaskList(newTaskList);
   };
 
   const droppableId = uuid();
