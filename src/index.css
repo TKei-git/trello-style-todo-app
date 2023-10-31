@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 45px;
+  color: aliceblue;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+}
+
+header {
+  text-align: center;
+  background-color: skyblue;
+}
+
+.app {
+  background: url(../src/images/sea.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.task-card{
+  width: 250px;
+  padding: 10px 25px;
+  margin: 10px 1%;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+.task-card-title {
+  margin-bottom: 10px;
+  width: 30%;
+  cursor: pointer;
+}
+
+.task-card-title-input {
+  width: 80px;
+  font-size: 1.1rem;
+  padding: 4px 6px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.task-add-input {
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.task-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgb(75 75 75);
+}
+
+.task-text {
+  margin-left: 12px;
+}
+
+.task-trash-button {
+  margin-right: 9px;
+  border: none;
+  cursor: pointer;
+}
+
+.task-cards-area {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.add-task-card-button-area {
+  margin-left: 1%;
+  margin-top: 25px;
+}
+
+.add-task-card-button {
+  padding: 10px 18px;
+  border-radius: 9999px;
+  font-size: 30px;
+  background-color: rgb(221, 194, 162);
+  box-shadow: 3px 3px 8px 1px black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.add-task-card-button:hover {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+.task-card-title-and-delete-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-card-delete-button {
+  border: none;
+  background-color: lightgray;
+  cursor: pointer;
+  font-size: 16px;
+  color: brown;
+}
