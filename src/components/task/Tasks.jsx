@@ -3,7 +3,7 @@ import { Task } from "./Task";
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
 import { v4 as uuid } from "uuid";
 
-export const Tasks = ({ inputText, taskList, setTaskList }) => {
+export const Tasks = ({ taskList, setTaskList }) => {
   const handleDragEnd = (e) => {
     if (!e.destination) {
       return;
